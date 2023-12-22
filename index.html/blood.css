@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(d521b3285331148964fc0a459a826ae3_XL.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+nav img{
+    width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    transition: 0.7s;
+}
+nav img:hover{
+    transform: rotate(360deg);
+}
+ul a{
+
+    font: 1;
+    text-align: right;   
+}
+section a{
+    display: inline-block;
+    
+    padding: 10px 15px;
+
+    list-style: none;
+
+    position: relative;
+
+    margin-bottom: 15px;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 15px;
+    font-family: system-ui;
+
+}
+
+.header ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    background: brown;
+    padding: 6px 15px;
+    border-radius: 20px;  
+    display: inline-block;
+    transition: 0.2s;
+
+    
+}
+ul li a:hover{
+    transform: scale(1.5);
+    
+}
+.header  ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    margin: auto;
+    display: block;
+    background: rgb(70, 106, 100);
+    transition: 0.7s;
+} 
+.header ul li:hover::after{
+    width: 100%;
+}
+.text{
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: bisque
+}
+.text h1{
+    font-size: 80px;
+    font-weight: 600px;
+}
+.text p{
+    font-size: 20px;
+    margin: 40px 0;
+}
+.btn{
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 18px;
+text-decoration: none;
+border-bottom: 1px solid white;
+}
+.btn:hover{
+    background: rgb(0,106,255);
+    border: rgb(0,106,255);
+    transition: 0.7s;
+}
+@media(max-width:700px){
+    .text h1 {
+        font-size: 25px;
+    }
+    .nav.link{
+        width: 200px;
+        height: 100vb;
+        display: block;
+        position: absolute;
+        background: rgb(0,106,255);
+        top: 0;
+        right: 0;
+        z-index: 2;
+        text-align: left;
+        transition: 1s;
+    }
+    .nav.link ul li{
+        display: block;
+        top: 10px;
+        left: 10px;
+    }
+
+.video{
+display: flex;
+justify-content: center;
+align-items: center;
+}
